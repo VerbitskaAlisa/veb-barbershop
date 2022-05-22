@@ -1,0 +1,334 @@
+:root {
+    --main-bgn-color: #ffffff;
+    --secondary-bgn-color: #F7F7F7;
+    --third-bgn-color: #191C26;
+    --accent-color: #FF6C00;
+    --title-color: #ffffff;
+    --second-title-color: #303030;
+    --main-text-color: #555555;
+    --color-nav: #ffffff;
+    --btn-color: #303030;
+    --btn-second-color: #ffffff;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.bottom-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 72px;
+    line-height: calc(85/72);
+    letter-spacing: 0.05em;
+}
+
+.btn {
+    font-weight: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16/12);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+
+/* -------------------------HEADER----------------------------- */
+
+.header {
+    background-color: var(--main-text-color)
+}
+
+.header-link,
+.header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--color-nav);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--accent-color);
+}
+
+.header-btn {
+    color: var(--btn-second-color)
+
+    background-color: #303030;
+}
+
+/* ---------------------------HERO----------------------------- */
+
+.hero {
+    background-color: var(--main-bgn-color)
+}
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    letter-spacing: 0.2em;
+    color: #303030;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: var(--accent-color);
+}
+
+.hero-content {
+    background-color: #555555;
+}
+
+.hero-top-text {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+    color: var(--title-color);
+}
+
+.hero-bottom-text {
+    color: #9DA4BD;
+}
+
+/* ---------------------------ABOUT----------------------------- */
+
+.about {
+    background-color: var(--main-bgn-color);
+}
+
+.about-top-text {
+    color: #303030;
+}
+
+.about-title {
+    color: var(--second-title-color);
+}
+
+.about-bottom-text {
+    color: #555555;
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: calc(26/14);
+    letter-spacing: 0.02em;
+    color: var(--main-text-color)
+}
+
+.about-btn {
+    color: var(--btn-color)
+}
+
+/* ---------------------------PRICES----------------------------- */
+
+.prices-top-text {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+    color: var(--title-color);
+}
+
+.prices-item-text { 
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: #9DA4BD;}
+
+.prices-btn {
+    color: var(--main-bgn-color);
+}
+
+/* ---------------------------BENEFITS----------------------------- */
+
+.benefits-item-count {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(57/42);
+    text-align: center;
+    letter-spacing: 0.05em;
+    
+    color: #303030;
+}
+
+.benefits-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11)
+    text-align: center;
+    
+    color: #303030;
+}
+
+.benefits-top-text {
+    color: #303030;
+}
+
+.benefits-title {
+    color: var(--second-title-color)
+}
+
+.benefits-bottom-text {
+    color: #555555;
+}
+
+/* ---------------------------MASTERS----------------------------- */
+
+.masters-top-text {
+    color: #303030;
+}
+
+.masters-title {
+    color: var(--second-title-color)
+}
+
+.mastes-item {}
+
+.masters-item-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(25/18);
+    text-align: center;
+    letter-spacing: 0.02em;
+    
+    color: #303030;
+}
+
+.masters-item-text {
+    font-size: 14px;
+    line-height: calc(19/14);
+    text-align: center;
+    letter-spacing: 0.02em;
+    
+    color: var(--accent-color)
+}
+
+/* ---------------------------GALLERY----------------------------- */
+
+.gallery-top-text {
+    color: #303030;
+}
+
+/* ---------------------------ONLINE----------------------------- */
+
+.online {
+    background-color: #303030;
+}
+
+.online-title {
+    color: var(--title-color)
+}
+
+.online-btn {
+    color: var(--btn-second-color);
+}
+
+/* ---------------------------CONTACTS----------------------------- */
+
+.contacts {
+    background-color: var(--third-bgn-color);
+}
+
+.contacts-title {
+    color: var(--title-color);
+}
+
+.contacts-address {
+    font-style: normal;
+}
+
+.contacts-link {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    
+    color: #9DA4BD;
+}
+
+.contacts-subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.contacts-time {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    
+    color: #9DA4BD;
+}
+
+/* ---------------------------FOOTER----------------------------- */
+
+.footer { 
+    background-color: var(--main-bgn-color);
+}
+
+.footer-copy {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    letter-spacing: 0.2em;
+    
+    color: #9DA4BD;
+}
+
+.footer-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    letter-spacing: 0.2em;
+    
+    color: #303030;
+}
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-color);
+}
+
