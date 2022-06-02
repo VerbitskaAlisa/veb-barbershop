@@ -15,6 +15,30 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+ul,ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .list {
     list-style: none;
 }
@@ -70,7 +94,36 @@ body {
 /* -------------------------HEADER----------------------------- */
 
 .header {
-    background-color: var(--main-text-color)
+    background-color: var(--main-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 69px;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-item {
+    margin-right: 40px;
+}
+
+.header-item:last-child {
+    margin-right: 0;
+}
+
+.header-connect {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .header-link,
@@ -90,15 +143,35 @@ body {
 }
 
 .header-btn {
-    color: var(--btn-second-color)
+    color: var(--btn-second-color);
+    margin-left: 40px;
+
+    padding: 12px 20px ;
 
     background-color: #303030;
+    border: 1px solid var(--accent-color);
+    border-color: var(--accent-color);
+    border-radius: 25px;
 }
 
 /* ---------------------------HERO----------------------------- */
 
 .hero {
-    background-color: var(--main-bgn-color)
+    background-color: var(--main-bgn-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-list {
+    display: flex;
+}
+
+.hero-item {
+    margin-right: 40px;
+}
+
+.hero-item:last-child {
+    margin-right: 0;
 }
 
 .hero-link {

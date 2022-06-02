@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Barbershop</title>
 </head>
 <body>
     <header class="header">
-        <a href="./index.html"><img src="./images/Logo.svg" alt="лого компанії"></a>
+        <div class="container">
+        <a href="./index.html" class="header-logo"><img src="./images/Logo.svg" alt="лого компанії"></a>
         <nav class="header-nav">
             <ul class="header-list list">
                 <li class="header-item"><a href="" class="header-link link">О нас</a></li>
@@ -22,11 +24,15 @@
                 <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
             </ul>
         </nav>
+        <div class="header-connect">
         <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
         <button class="header-btn btn" type="button">онлайн-запись</button>
+        </div>
+        </div>
     </header>
     <main>
         <section class="hero">
+            <div class="container">
             <ul class="hero-list list">
                 <li class="hero-item"><a href="" class="hero-link link" target="_blank" rel="noopener nofollow noreferrer">Instagram</a></li>
                 <li class="hero-item"><a href="" class="hero-link link" target="_blank" rel="noopener nofollow noreferrer">Youtube</a></li>
@@ -36,6 +42,7 @@
                 <h1 class="hero-title title" lang="en">BarberShop</h1>
                 <p class="hero-bottom-text bottom-text">Мы эксперты в модных мужских стрижках.
                     Работаем быстро, осторожно и со вкусом.</p>
+            </div>
             </div>
         </section>
         <section class="about">
