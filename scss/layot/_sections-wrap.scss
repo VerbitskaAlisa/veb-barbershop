@@ -1,0 +1,13 @@
+.sections-wrap {
+    background-color:var(--third-bgn-color);
+    background-image: url(../images/bg-conatcts.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(50% - 15px);
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sections-wrap .container {
+    display: flex;
+}

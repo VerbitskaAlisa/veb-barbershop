@@ -1,0 +1,22 @@
+@import './utils/vh.scss';
+@import './utils/vars.scss';
+@import './base/reset.scss';
+@import './base/common.scss';
+
+@import './components/container';
+@import './components/title';
+@import './components/top-text';
+@import './components/bottom-text';
+@import './components/btn';
+
+@import './layot/header';
+@import './layot/hero';
+@import './layot/about';
+@import './layot/prices';
+@import './layot/benefits';
+@import './layot/masters';
+@import './layot/gallery';
+@import './layot/sections-wrap';
+@import './layot/online';
+@import './layot/contacts';
+@import './layot/footer';

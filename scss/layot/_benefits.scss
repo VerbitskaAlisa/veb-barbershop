@@ -1,0 +1,82 @@
+.benefits {
+    padding-top: 143px;
+    padding-bottom: 137px;
+}
+
+.benefits-container {
+    display: flex;
+}
+
+.benefits-list {
+    width: 370px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits-item {
+    width: 170px;
+    height: 133px;
+    background-color: #F7F7F7;
+    padding: 20px 24px;
+}
+
+.benefits-item:nth-child(odd) {
+    margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+    margin-top: 30px;
+}
+
+.benefits-item-count {
+    display: block;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(57/42);
+    text-align: center;
+    letter-spacing: 0.05em;
+    
+    color: #303030;
+}
+
+.benefits-item-count::after {
+    content: '+';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: center;
+    color: var(--accent-color);
+    vertical-align: top;
+
+}
+
+.benefits-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    text-align: center;
+    
+    color: #303030;
+}
+
+.benefits-top-text {
+    margin-bottom: 20px;
+    color: #303030;
+}
+
+.benefits-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    color: var(--second-title-color);
+}
+
+.benefits-bottom-text {
+    color: #555555;
+}
+
+.benefits-content {
+    margin-left: 130px;
+}

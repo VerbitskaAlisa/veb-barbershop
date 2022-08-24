@@ -1,0 +1,15 @@
+.btn {
+    font-weight: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16/12);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    min-width: 160px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    border-color: var(--accent-color);
+    border-radius: 25px;
+}
