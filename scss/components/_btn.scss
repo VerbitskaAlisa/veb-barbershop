@@ -13,3 +13,8 @@
     border-color: var(--accent-color);
     border-radius: 25px;
 }
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--accent-color);
+}

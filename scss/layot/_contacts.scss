@@ -22,11 +22,19 @@
 }
 
 .contacts-link {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
     
     color: #9DA4BD;
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+
 }
 
 .contacts-item {
@@ -37,7 +45,7 @@
     margin-bottom: 20px;
 }
 
-.contacts-item::before {
+.contacts-link::before {
     display: inline-block;
     content: '';
     width: 24px;

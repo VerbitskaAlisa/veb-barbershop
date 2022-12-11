@@ -30,20 +30,10 @@
     border: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
     outline: none;
-    
-}
-
-.online-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-weight: 600;
-   font-size: 11px;
-   line-height: 1.36;
-   letter-spacing: 0.1em;
-   text-transform: uppercase;
-   color: rgba(157, 164, 189, 0.4);
-
+    color: #ffffff;
+    &:focus {
+        border-color: #ffffff;
+      }
 }
 
 .text-field {
@@ -61,4 +51,30 @@
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
     margin-bottom: 44px;
     outline: none;
+    color: #ffffff;
+   
+    &:focus {
+        border-color: #ffffff;
+      }
 }
+
+.online-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+    transition: color 300ms linear, transform 300ms linear;
+     .online-input:focus + &,
+     .online-input:not(:placeholder-shown) + &,
+     .online-textarea:focus + &,
+     .online-textarea:not(:placeholder-shown) + & {
+     color: #ffffff;
+     transform: translateY(-100%);
+   }
+ 
+ }

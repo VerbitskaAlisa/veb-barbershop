@@ -74,3 +74,50 @@
     color: #9DA4BD;
     max-width: 400px;
 }
+
+.change-btn-container {
+    display: flex;
+    position: absolute;
+    top: 550px;
+    left: 1800px;
+}
+
+.change-btn {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #9DA4BD;
+    background-color: transparent;
+    border: none;
+     &::after {
+        content: "";
+        margin-top: 10px;
+        width: 60px;
+        height: 1px;
+        background-color: #9DA4BD;
+    
+    }
+
+    &:hover,
+    &:focus {
+    background-color: transparent;
+    color: var(--title-color);
+}
+    &:hover::after,
+    &:focus::after {
+        background-color: var(--title-color);
+    }
+}
+
+.change-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.change-btn.forward {
+    align-items: flex-start;
+}

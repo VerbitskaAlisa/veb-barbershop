@@ -14,19 +14,27 @@
     align-items: center;
     justify-content: center;
     margin-left: auto;
+
+    &::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: currentColor;
+        margin-right: 40px;
+    }
 }
 
-.footer-list::before {
-    content: "";
-    width: 60px;
-    height: 1px;
-    background-color: currentColor;
-    margin-right: 40px;
+.footer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-item:not(:last-child) {
     margin-right: 40px;
 }
+
+
 
 .footer-copy {
     font-weight: 600;
@@ -49,3 +57,6 @@
 .footer-link:focus {
     color: var(--accent-color);
 }
+ 
+
+
