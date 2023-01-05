@@ -154,17 +154,17 @@ body {
 
 .header .container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-}
-@media screen and (min-width: 1200px) {
-  .header .container {
-    justify-content: center;
-  }
 }
 
 .header-logo {
-  margin-right: 69px;
+  margin-right: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    margin-right: 69px;
+  }
 }
 
 .logo__icon {
@@ -172,14 +172,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .logo__icon {
-    fill: inherit;
+    fill: #000000;
   }
 }
 
 .header-list {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header-list {
     display: flex;
     align-items: center;
@@ -187,14 +187,22 @@ body {
 }
 
 .header-item:not(last-child) {
-  margin-right: 40px;
+  margin-right: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .header-item:not(last-child) {
+    margin-right: 40px;
+  }
 }
 
 .header-connect {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header-connect {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
     margin-left: auto;
   }
 }
@@ -218,10 +226,15 @@ body {
 .header-btn {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header-btn {
     display: block;
     color: var(--btn-second-color);
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-btn {
     margin-left: 40px;
   }
 }
@@ -231,6 +244,11 @@ body {
   background-color: transparent;
   border: none;
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
 }
 
 .menu__burger {
@@ -352,7 +370,7 @@ body {
 .soc {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .soc {
     width: 90px;
     display: flex;
@@ -428,7 +446,7 @@ body {
 .change-btn-container {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .change-btn-container {
     display: flex;
     position: absolute;

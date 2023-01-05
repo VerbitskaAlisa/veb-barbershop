@@ -20,7 +20,7 @@
 
 .soc {
     display: none;
-    @include desktop {
+    @include tablet {
         width: 90px;
         display: flex;
         align-items: flex-end;
@@ -95,7 +95,7 @@
 
 .change-btn-container {
     display: none;
-    @include desktop {
+    @include tablet {
         display: flex;
         position: absolute;
         bottom: 60px;
