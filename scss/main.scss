@@ -1,5 +1,6 @@
 @import './utils/vh.scss';
 @import './utils/vars.scss';
+@import './utils/mixins';
 @import './base/reset.scss';
 @import './base/common.scss';
 
@@ -10,6 +11,7 @@
 @import './components/btn';
 
 @import './layot/header';
+@import './layot/mob-menu';
 @import './layot/hero';
 @import './layot/about';
 @import './layot/prices';

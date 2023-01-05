@@ -4,12 +4,27 @@
 
 .hero .container {
     display: flex;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    @include tablet {
+        width: 720px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    @include desktop {
+        width: 1200px;
+    }
 }
 
 .soc {
-    width: 90px;
-    display: flex;
-    align-items: flex-end;
+    display: none;
+    @include desktop {
+        width: 90px;
+        display: flex;
+        align-items: flex-end;
+    }
 }
 
 .hero-list {
@@ -58,8 +73,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 272px 96px 206px 96px;
+    padding: 208px 143px 183px 31px;
     flex-grow: 1;
+    @include desktop {
+        padding: 272px 96px 206px 96px;
+    }
 }
 
 .hero-top-text {
@@ -76,10 +94,13 @@
 }
 
 .change-btn-container {
-    display: flex;
-    position: absolute;
-    top: 550px;
-    left: 1800px;
+    display: none;
+    @include desktop {
+        display: flex;
+        position: absolute;
+        bottom: 60px;
+        right: 80px;
+    }
 }
 
 .change-btn {

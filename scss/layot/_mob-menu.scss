@@ -1,0 +1,92 @@
+.mob-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 386px;
+    height: 100vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 61px;
+    padding-right: 31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.mob-menu.is-hidden {
+    display: none;
+}
+
+.mob-top {
+    width: 100%;
+    margin-bottom: 64px;
+}
+
+
+.menu-close-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
+
+.close-icon {
+    fill: #000000;
+}
+
+
+.mob-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mob-link,
+.mob-tel {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #303030;
+
+    &:hover {
+        color: var(--accent-color);
+      }
+  }
+
+.mob-btn {
+    margin-top: 24px;
+    margin-bottom: 64px;
+}  
+
+.mob-soc-list {
+    position: relative;
+    padding-left: 100px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 60px;
+        height: 1px;
+        background-color: #303030;
+      }
+}
+
+.mob-soc-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mob-soc-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    letter-spacing: 0.2em;
+    color: #303030;
+}
+

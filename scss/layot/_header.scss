@@ -1,5 +1,6 @@
 .header {
     position: absolute;
+    z-index: 999;
     width: 100%;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -8,16 +9,29 @@
 .header .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    @include desktop {
+        justify-content: center;
+    }
 }
 
 .header-logo {
     margin-right: 69px;
 }
 
+.logo__icon {
+   fill: #ffffff;
+   @include tablet {
+    fill: inherit;
+   }
+}
+
 .header-list {
-    display: flex;
-    align-items: center;
+    display: none;
+    @include desktop{
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header-item:not(last-child) {
@@ -25,7 +39,10 @@
 }
 
 .header-connect {
-    margin-left: auto;
+    display: none;
+    @include desktop {
+        margin-left: auto;
+    } 
 }
 
 .header-link,
@@ -45,6 +62,21 @@
 }
 
 .header-btn {
-    color: var(--btn-second-color);
-    margin-left: 40px;
+    display: none;
+    @include desktop {
+        display: block;
+        color: var(--btn-second-color);
+        margin-left: 40px;
+    }
+}
+
+.menu-open-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}  
+
+.menu__burger {
+    fill: #ffffff;
 }
