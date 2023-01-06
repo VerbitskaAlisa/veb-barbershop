@@ -32,6 +32,7 @@
         <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
         <button class="header-btn btn" type="button">онлайн-запись</button>
         </div>
+       
         <button class='menu-open-btn' type="button">
             <svg class="menu__burger" width="40" height="40">
                 <use href="./images/symbol-defs.svg#icon-menu_burger"></use>
@@ -86,11 +87,20 @@
             </div>
             </div>
         </section>
-        <!-- <section class="about">
+        <section class="about">
             <div class="container">
             <ul class="about-list list">
-                <li class="about-item"><img src="./images/img-1-min.jpg" width="270" height="445" alt="барбер бреет шею"></li>
-                <li class="about-item"><img src="./images/img-2-min.jpg" width="270" height="445" alt="барбер делает кантик"></li>
+                <li class="about-item">
+                    <picture>
+                        <source
+                        media="(min-width: 768px)"
+                        srcset="./images/about-tablet-img-1.jpg">
+                        <source
+                        media="(min-width: 1200px)"
+                        srcset="./images/img-1-min.jpg">
+                    </picture>
+                    <!-- <img class="about-img-first" src="./images/img-1-min.jpg" width="270" height="445" alt="барбер бреет шею"></li> -->
+                <li class="about-item"><img class="about-img-second" src="./images/img-2-min.jpg" width="270" height="445" alt="барбер делает кантик"></li>
             </ul>
             <div class="about-content">
                 <p class="about-top-text top-text">О нас</p>
@@ -103,7 +113,7 @@
                 <button class="about-btn btn" type="button">онлайн-запись</button>
             </div>
             </div>
-        </section> -->
+        </section>
         <!-- <section class="prices">
             <div class="container"> 
             <p class="prices-top-text top-text">Проведи время в компании лучших мастеров</p>

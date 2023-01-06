@@ -1,15 +1,29 @@
 .about {
     background-color: var(--main-bgn-color);
+    padding-top: 84px;
+    @include tablet {
     padding-top: 163px;
     padding-bottom: 89px;
+    }
+
 }
 
 .about .container {
     display: flex;
+    @include tablet {
+   
+    }
+
 }
 
 .about-list {
-    display: flex;
+    display: none;
+    @include tablet {
+        display: block;
+    }
+    @include desktop {
+        display: flex;
+    }
 }
 
 .about-item {
@@ -21,8 +35,9 @@
 }
 
 .about-content {
-
+   @include tablet {
     margin-left: 64px;
+   }
 }
 
 .about-top-text {

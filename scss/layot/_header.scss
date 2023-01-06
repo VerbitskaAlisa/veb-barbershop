@@ -2,18 +2,23 @@
     position: absolute;
     z-index: 999;
     width: 100%;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 40px;
+    @include desktop {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 .header .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .header-logo {
-    margin-right: 60px;
+    @include tablet {
+        margin-right: 60px;
+    }
     @include desktop {
         margin-right: 69px;
     }
@@ -44,11 +49,14 @@
 .header-connect {
     display: none;
     @include tablet {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+        position: relative;
+        display: block;
         margin-left: auto;
     } 
+    @include desktop {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header-link,
@@ -67,12 +75,23 @@
     color: var(--accent-color);
 }
 
+.header-tel {
+    @include tablet {
+        position: absolute;
+        right: 20px;
+        top: 60px;
+    }
+    @include desktop {
+        position: static;
+    }
+}
+
+
 .header-btn {
     display: none;
     @include tablet {
         display: block;
         color: var(--btn-second-color);
-        margin-bottom: 20px;
     
     }
     @include desktop {

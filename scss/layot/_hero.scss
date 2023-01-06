@@ -3,11 +3,10 @@
 }
 
 .hero .container {
-    display: flex;
     position: relative;
-    width: 100%;
     padding: 0;
     @include tablet {
+        display: flex;
         width: 720px;
         padding-left: 15px;
         padding-right: 15px;
@@ -69,14 +68,21 @@
     background-image: linear-gradient(
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
-      ), url(../images/background-img/slider-img-1.jpg);
+      ), url(../images/background-img/slider-mob-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 208px 143px 183px 31px;
     flex-grow: 1;
+    @include tablet {
+
+    }
     @include desktop {
         padding: 272px 96px 206px 96px;
+        background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ), url(../images/background-img/slider-img-1.jpg);
     }
 }
 
@@ -98,8 +104,8 @@
     @include tablet {
         display: flex;
         position: absolute;
-        bottom: 60px;
-        right: 80px;
+        bottom: 30px;
+        right: 60px;
     }
 }
 
